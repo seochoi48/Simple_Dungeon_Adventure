@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dungeonMenu">
+
+    <fragment
+        android:id="@+id/dungeonMenu"
+        android:name="com.example.simpledungeonadventure.DungeonMenu"
+        android:label="fragment_dungeon_menu"
+        tools:layout="@layout/fragment_dungeon_menu" />
+</navigation>
