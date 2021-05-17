@@ -1,14 +1,14 @@
 package com.example.simpledungeonadventure
-
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.example.simpledungeonadventure.Story.Scene1
 
 
-class DungeonMenu : Fragment() {
+private const val TAG = "DungeonMenu"
+class DungeonMenu : androidx.fragment.app.Fragment() {
     lateinit var startButton: Button
     lateinit var loadButton: Button
     lateinit var characterButton: Button
@@ -22,16 +22,15 @@ class DungeonMenu : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(R.layout.fragment_dungeon_menu, container, false)
-        startButton = view.findViewById(R.id.StartButton)
-        loadButton = view.findViewById(R.id.LoadButton)
-        characterButton = view.findViewById(R.id.CharacterSelect)
-
+        val view = inflater.inflate(com.example.simpledungeonadventure.R.layout.fragment_dungeon_menu, container, false)
+        startButton = view.findViewById(com.example.simpledungeonadventure.R.id.StartButton)
+        loadButton = view.findViewById(com.example.simpledungeonadventure.R.id.LoadButton)
+        characterButton = view.findViewById(com.example.simpledungeonadventure.R.id.CharacterSelect)
         startButton.setOnClickListener {
-
+           (activity as MainActivity)!!.gotoFragment(Scene1())
         }
         loadButton.setOnClickListener {
-
+            (activity as MainActivity)!!.loadSavedPlace()
         }
         characterButton.setOnClickListener {
             
@@ -39,6 +38,14 @@ class DungeonMenu : Fragment() {
         return view
     }
 
+
     companion object {
+
+        @JvmStatic
+        fun newInstance() : DungeonMenu {
+            return DungeonMenu()
+        }
+
     }
+
 }

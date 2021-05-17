@@ -4,6 +4,53 @@
     <string name="Load_Button">Load</string>
     <string name="Character"> Select Character</string>
     <string name="Start">Start</string>
+    <string name="North">North</string>
+    <string name="West">West</string>
+    <string name="South">South</string>
+    <string name="East">East</string>
+    <string name="Save">Save</string>
+    <string name="Scene_1_Scenario">You travel north and come upon a lush, green meadow.  You hear a faint rustle coming from the north.  What would you like to do?</string>
+    <string name="Scene_1_Fight">A group of three goblins jump out of the bush.  You take out your weapon to fight!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Scene_2NText">You have successfully defeated the 3 goblins. </string>
+    <string name="Scene_3NText">In the distance an outline of a town comes into view. The road heads north, east, and west.  There is a sign that reads: North: Town, East: Cave, West: Forest  </string>
+    <string name="Scene_4NText">You come across a traveler resting on the road.  The traveller tells you that there has been an abundance of goblin attacks lately and the guild will reward you for each proof of kill.  You thank him and wish him well on his journey.</string>
+    <string name="Scene_5NText">Continuing towards the town, you start looking for any signs of goblin hordes.  There is a small cluster of houses to your north, probably the village the traveller hailed from.</string>
+    <string name="Scene_6NText">You arrive at the village and ask around for info on goblin sightings.  The villagers are excited at the news but unfortunately, as they stay in or near the village there was very little news.  They do tell you of a horde of goblin that settled in an abandoned mine shaft towards the west.  You thank them for the info.</string>
+    <string name="Scene_6NItemText">You are given 5 health and 5 mana potions.</string>
+    <string name="Scene_6NEastText">Here sits a lone farm, dilapidated by the years.  There is nothing here.</string>
+    <string name="Scene_6NEastSearch">You search the farm and to your surprise you find a health potion and 20 gold, along with broken and unusable adventurer equipment.</string>
+    <string name="Scene_6NWest1Text">You head west as toward the mining shaft to try and kill the goblin horde.</string>
+    <string name="Scene_6NWest2Text">You continue towards the mine shaft.  You hear a faint sound, stopping and hiding in nearby tall grass, you focus and hear goblin screeches down the road.</string>
+    <string name="Scene_6NWest2Fight">You come across a small patrol consisting of 5 goblins.  You take out your weapon to fight!</string>
+    <string name="Scene_6NWest3Text">After your fight with the goblin patrol, you are now sure there is a goblin horde near.</string>
+    <string name="Scene_6NWest4Text">You prepared yourself and headed west toward the mine shaft.  You see the entrance of the mine shaft but no goblins.</string>
+    <string name="Scene_6NWest5Text">Heading inside the mine shaft, you come see a small goblin settlement consisting of 10 goblins. Continuing would mean fighting the horde all at once, continue at your own risk.</string>
+    <string name="Scene_6NWest5Fight">The goblin horde detects your presence and releases a battle screech.</string>
+    <string name="Scene_7NText">You head north and the town starts to get clearer.</string>
+    <string name="Scene_8NText">Nothing to view here, the town gets closer and closer.  You should be able to reach it soon.</string>
+    <string name="Scene_9NText">You arrive at the town and ask a nearby resident for the layout of the town. The resident tell you the guild is towards the north and that the potion shop and the equipment shop is at either end of the fork before getting to the guild.</string>
+    <string name="Scene_10NText">You head down the road towards the guild, there are houses to both side of you.</string>
+    <string name="Scene_10NWText">You head into the house to your right.  A woman screams at the sudden intrusion and you are thrown into jail.</string>
+    <string name="Scene_10NEText">You head into the house to your left.  There is no one in the house.</string>
+    <string name="Scene_10NESearchText">You find 10 gold and boots.</string>
+    <string name="Scene_11NText">You continue north. The guild comes closer. </string>
+    <string name="Scene_12NText">You come across the fork. To the north is the guild entrance.  To the west is item shop.  To the east is the equipment shop.</string>
+    <string name="Scene_12NWestText">Welcome to the item shop!  What would you like to buy?</string>
+    <string name="Scene_12EastText">Welcome to the equipment shop! What would you like to buy?</string>
+    <string name="Scene_13NText">Welcome to the guild! How can we help you?</string>
+    <string name="Scene_14NText">Outside the town there are two pathways to go.  To the northwest off in the distance there resides the castle of the current demon overlord.  To the northeast lies a forest where it is rumored that trolls reside.</string>
+    <string name="Scene_15NWText">On the path to the demon overlord\'s castle, you come across two bridges and two statues.  A sign reads "Only those who are worthy can cross the bridge. Cannot cross back." </string>
+    <string name="Scene_15NWRiddle">The statues come to life and starts speaking "Welcome traveller, to reach the other side you must choose right to get across. Which will you choose?</string>
+    <string name="Scene_16NWNorthText">Past the bridge, the land ahead is noticeably darker and less lively.</string>
+    <string name="Scene_17NWNorthText">The few life grow scarcer and scarcer as you head towards the castle.</string>
+    <string name="Scene_18NWNorthText">You come across the remains of a skirmish.  You see dead adventurers and orcs and goblins alike.</string>
+    <string name="Scene_18NWNorthSearch">You searched through the items of the dead and come out with 3 health potions, 2 mana potions, and better equipment.</string>
+    <string name="Scene_19NWNText">You reach a cave with a sign that reads :Labrynth.</string>
+
+
+
+    <string name="Scene_Move">Where would you like to go?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

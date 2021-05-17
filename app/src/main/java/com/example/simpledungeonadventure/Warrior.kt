@@ -1,8 +1,12 @@
 package com.example.simpledungeonadventure
 
+import android.os.Parcel
+import android.os.Parcelable
+import androidx.fragment.app.Fragment
 import kotlin.properties.Delegates
 
-class Warrior {
+
+class Warrior() {
     lateinit var name: String
     private var strength: Int = 5
     private var defense: Int = 10
@@ -13,7 +17,8 @@ class Warrior {
     lateinit var itemlist: Map<String, Int>
     private var deathCount: Int = 0
 
-    private fun Warrior(myName: String) {
+
+    fun Warrior(myName: String) {
         this.name = myName
     }
 
@@ -58,4 +63,5 @@ class Warrior {
     private fun addDeathCount() {
         deathCount += 1
     }
+
 }

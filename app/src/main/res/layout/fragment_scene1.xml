@@ -2,61 +2,68 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Dungeon_Menu"
+    android:id="@+id/openScene"
+    android:tag="SCENE1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DungeonMenu">
+    tools:context=".Story.Scene1">
 
-
-    <ImageView
-        android:id="@+id/Dungeon_Entrance"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/Scene_1_Scenario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/WelcomeText"
+    <Button
+        android:id="@+id/West"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Welcome"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:text="@string/West"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dungeon_Entrance" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/LoadButton"
+        android:id="@+id/East"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/Load_Button"
-        app:layout_constraintEnd_toStartOf="@+id/StartButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
-
-    <Button
-        android:id="@+id/CharacterSelect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/Character"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:text="@string/East"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/StartButton"
+        android:id="@+id/North"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/Start"
+        android:layout_marginBottom="600dp"
+        android:text="@string/North"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/LoadButton"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

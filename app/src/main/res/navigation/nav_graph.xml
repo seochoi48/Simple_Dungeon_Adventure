@@ -9,5 +9,14 @@
         android:id="@+id/dungeonMenu"
         android:name="com.example.simpledungeonadventure.DungeonMenu"
         android:label="fragment_dungeon_menu"
-        tools:layout="@layout/fragment_dungeon_menu" />
+        tools:layout="@layout/fragment_dungeon_menu" >
+        <action
+            android:id="@+id/action_dungeonMenu_to_scene1"
+            app:destination="@id/scene1" />
+    </fragment>
+    <fragment
+        android:id="@+id/scene1"
+        android:name="com.example.simpledungeonadventure.Story.Scene1"
+        android:label="fragment_scene1"
+        tools:layout="@layout/fragment_scene1" />
 </navigation>
