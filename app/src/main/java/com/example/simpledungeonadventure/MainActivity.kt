@@ -13,6 +13,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.replace
+import com.example.simpledungeonadventure.Story.Scene2North
+import java.util.*
+import kotlin.reflect.KClass
+
 
 private const val  KEY_INDEX =  "index"
 class MainActivity : AppCompatActivity() {
@@ -61,12 +65,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loadSavedPlace() {
-        val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-        val savedTAG: String? = sharedPreferences.getString("Fragment_TAG", null)
-        resources.getIdentifier(savedTAG,"layout", packageName)
-
+//        val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+//        val savedTAG: String? = sharedPreferences.getString("Fragment_TAG", null)
+//        resources.getIdentifier(savedTAG,"layout", packageName)
+//        Scene2North.javaClass.`package`
 //        val hexFrag = java.lang.Integer.toHexString(savedTAG)
-        val savedFragment: Class<Fragment> = Class.forName("Scene1") as Class<Fragment>
+        try{
+            val savedFragment: Fragment = Class.forName("com.example.simpledungeonadventure.Story.Scene5_North").newInstance() as Fragment
+            gotoFragment(savedFragment)
+
+        } catch (e: ClassNotFoundException) {
+            Toast.makeText(this, "Class not found", Toast.LENGTH_SHORT).show()
+        }
+
+
 
 
 //        savedFragment?.let {
@@ -75,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 //                .replace(R.id.fragment_container, it)
 //                .commit()
 //        }
-        Toast.makeText(this, savedTAG.toString(), Toast.LENGTH_LONG).show()
+//        Toast.makeText(this, savedTAG.toString(), Toast.LENGTH_LONG).show()
 
     }
 
